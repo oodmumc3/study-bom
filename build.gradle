@@ -1,0 +1,41 @@
+group 'com.crdev.bom'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+    compile 'org.springframework:spring-webmvc:4.3.16.RELEASE'
+
+    // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+    providedCompile 'javax.servlet:javax.servlet-api:3.0.1'
+
+    // https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/javax.servlet.jsp.jstl-api
+    compile 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1'
+    compile 'taglibs:standard:1.1.2'
+
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-web
+    compile 'org.springframework.security:spring-security-web:4.2.5.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-config
+    compile 'org.springframework.security:spring-security-config:4.2.5.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs
+    compile 'org.springframework.security:spring-security-taglibs:4.2.5.RELEASE'
+
+    compile 'org.aspectj:aspectjrt:1.8.13'
+    compile 'org.aspectj:aspectjweaver:1.8.13'
+
+    testCompile 'junit:junit:4.12'
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-test
+    testCompile 'org.springframework:spring-test:4.3.16.RELEASE'
+
+}
