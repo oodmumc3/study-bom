@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="/resources/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common.css"/>
 
     <title>Bom-TF > Spring Study</title>
 </head>
@@ -24,10 +24,10 @@
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="${pageContext.request.contextPath}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/board">Board</a>
+                <a class="nav-link" href="${pageContext.request.contextPath}/board">Board</a>
             </li>
         </ul>
         <jsp:include page="tmpl/auth.jsp" />
